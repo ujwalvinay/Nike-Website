@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$font : 'Ubuntu', sans-serif;
+$light : 300;
+$normal : 400;
+$semi-bold : 500;
+$bold : 700;
+
+// colors
+$btn-color : #98A8F8;
+$banner-bg : #BCCEF8;
+
+$shoe1 : #98A8F8;
+$shoe2 : #FFF6BF;
+$shoe3 : #B1D7B4;
+$shoe4 : #FF8787;
+
+
+@mixin button
+{
+    padding: .5rem 1rem;
+    background-color:$btn-color;
+    font-weight: $semi-bold;
+    border: none;
+    color: white;
+    border-radius: 30px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+html,body
+{
+    overflow-x: hidden
+}
+body
+{
+    position: relative;
+}
+.title
+{
+    background: url('assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container
+    {
+        .navbar
+        {
+            font-size: 20px;
+            font-weight: $semi-bold;
+            background: transparent;
+        }
+        .navbar-brand
+        {
+            width: 90px;
+            #logo
+            {
+                width: 100%;
+            }
+        }
+        .navbar-nav
+        {
+            gap: 1rem;
+            
+            .nav-item
+            {
+                font-weight: $semi-bold;
+                font-size: 18px;
+                
+            }
+        }
+        .user
+        {
+            width: 30px;
+        }
+
+    }
+    .banner-area
+    {
+        justify-content: space-between;
+        .text-section
+        {
+            padding: 7rem;
+            h6
+            {
+                font-weight: $bold;
+                color: $btn-color;
+                font-size: 20px;
+            }
+            h1
+            {
+                font-size: 50px;
+                max-width: 24rem;
+            }
+            p
+            {
+                max-width: 20rem;
+                opacity: .7;
+                margin-block: 1rem;
+                line-height: 30px
+            }
+            #ShopBtn
+            {
+                @include button();
+            }
+        }
+        .image-section
+        {
+            text-align: end;
+            background-color: $banner-bg;
+            position: relative;
+            .banner-img
+            {
+                
+                transform: rotate(-35deg);
+                width: 100%;
+                position: absolute;
+                top: -4rem;
+                right: 8rem;
+            }
+        }
+    }
+}
+.showcase
+{
+    margin: 6rem 0;
+    .showcase-row
+    {
+        justify-content: center;
+        gap: 4rem;
+        
+    }
+    .product-div
+    {
+        padding: 1rem;
+        padding-top: 4rem;
+        border-radius: 20px;
+        text-align: center;
+        position: relative;
+        h6
+        {
+            margin: 0;
+        }
+        p
+        {
+            margin: 0;
+        }
+        .shoe-showcase
+        {
+            width: 220px;
+            transform: rotate(-15deg);
+            padding-bottom: 1rem;
+            position: absolute;
+            top: -6rem;
+            right: 1rem;
+        }
+        #bigshoe
+        {
+            width: 180px;
+        }
+        #shoebig2
+        {
+            width: 200px;
+        }
+    }
+    .shoe1
+    {
+        background-color: $shoe1;
+    }
+    .shoe2
+    {
+        background-color: $shoe2;
+    }
+    .shoe3
+    {
+        background-color: $shoe3;
+    }
+    .shoe4
+    {
+        background-color: $shoe4;
+    }
+}

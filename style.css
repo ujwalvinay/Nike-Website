@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.title {
+  background: url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title .container .navbar {
+  font-size: 20px;
+  font-weight: 500;
+  background: transparent;
+}
+.title .container .navbar-brand {
+  width: 90px;
+}
+.title .container .navbar-brand #logo {
+  width: 100%;
+}
+.title .container .navbar-nav {
+  gap: 1rem;
+}
+.title .container .navbar-nav .nav-item {
+  font-weight: 500;
+  font-size: 18px;
+}
+.title .container .user {
+  width: 30px;
+}
+.title .banner-area {
+  justify-content: space-between;
+}
+.title .banner-area .text-section {
+  padding: 7rem;
+}
+.title .banner-area .text-section h6 {
+  font-weight: 700;
+  color: #98A8F8;
+  font-size: 20px;
+}
+.title .banner-area .text-section h1 {
+  font-size: 50px;
+  max-width: 24rem;
+}
+.title .banner-area .text-section p {
+  max-width: 20rem;
+  opacity: 0.7;
+  margin-block: 1rem;
+  line-height: 30px;
+}
+.title .banner-area .text-section #ShopBtn {
+  padding: 0.5rem 1rem;
+  background-color: #98A8F8;
+  font-weight: 500;
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+.title .banner-area .image-section {
+  text-align: end;
+  background-color: #BCCEF8;
+  position: relative;
+}
+.title .banner-area .image-section .banner-img {
+  transform: rotate(-35deg);
+  width: 100%;
+  position: absolute;
+  top: -4rem;
+  right: 8rem;
+}
+
+.showcase {
+  margin: 6rem 0;
+}
+.showcase .showcase-row {
+  justify-content: center;
+  gap: 4rem;
+}
+.showcase .product-div {
+  padding: 1rem;
+  padding-top: 4rem;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+.showcase .product-div h6 {
+  margin: 0;
+}
+.showcase .product-div p {
+  margin: 0;
+}
+.showcase .product-div .shoe-showcase {
+  width: 220px;
+  transform: rotate(-15deg);
+  padding-bottom: 1rem;
+  position: absolute;
+  top: -6rem;
+  right: 1rem;
+}
+.showcase .product-div #bigshoe {
+  width: 180px;
+}
+.showcase .product-div #shoebig2 {
+  width: 200px;
+}
+.showcase .shoe1 {
+  background-color: #98A8F8;
+}
+.showcase .shoe2 {
+  background-color: #FFF6BF;
+}
+.showcase .shoe3 {
+  background-color: #B1D7B4;
+}
+.showcase .shoe4 {
+  background-color: #FF8787;
+}/*# sourceMappingURL=style.css.map */
